@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ECECEC;
+    background-color: #F2E5CF; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,37 +9,39 @@ body {
 }
 
 .container {
-    background-color: #F2E5CF;
+    background-color: #ECECEC;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px rgba(24, 56, 60, 0.15);
+    overflow: hidden; 
 }
 
 .box {
+    display: block;
     margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 20px 40px;
+    border-radius: 50px; 
     transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.box a {
+    text-align: center;
     text-decoration: none;
     font-size: 18px;
-    display: block;
-    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #management {
-    background-color: #FDD7A4;
-    color: #18383C;
-}
-
-#vacations {
     background-color: #013D3E;
     color: #FDD7A4;
 }
 
+#vacations {
+    background-color: #18383C;
+    color: #FDD7A4;
+}
+
 .box:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
+    background-color: #FDD7A4;
+    color: #013D3E;
 }
