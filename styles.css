@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ECECEC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,40 +9,37 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #F2E5CF;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .box {
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .box a {
     text-decoration: none;
-    color: #fff;
     font-size: 18px;
     display: block;
     text-align: center;
 }
 
 #management {
-    background-color: #3498db;
+    background-color: #FDD7A4;
+    color: #18383C;
 }
 
 #vacations {
-    background-color: #2ecc71;
+    background-color: #013D3E;
+    color: #FDD7A4;
 }
 
 .box:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
 }
